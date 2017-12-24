@@ -1,0 +1,17 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.10.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:handlebars:20151207':
+    - snyk-demo-child > handlebars:
+        patched: '2017-12-24T13:02:05.424Z'
+  'npm:hawk:20160119':
+    - azure-mgmt-storage > azure-common > request > hawk:
+        patched: '2017-12-24T13:02:05.424Z'
+  'npm:request:20160119':
+    - azure-mgmt-storage > azure-common > request:
+        patched: '2017-12-24T13:02:05.424Z'
+  'npm:uglify-js:20151024':
+    - snyk-demo-child > handlebars > uglify-js:
+        patched: '2017-12-24T13:02:05.424Z'
