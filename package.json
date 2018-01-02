@@ -14,15 +14,19 @@
     }
   ],
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "falcor-hapi": "netflix/falcor-hapi",
-    "falcor-router-demo": "1.0.3",
-    "hapi": "^10.5.0",
+    "falcor-router-demo": "1.0.5",
+    "hapi": "^11.1.4",
     "inert": "^3.2.0",
-    "bassmaster": "1.5.1",
+    "bassmaster": "1.5.2",
     "snyk-demo-child": "0.0.1",
-    "azure-mgmt-storage": "^0.9.16"
-  }
+    "azure-mgmt-storage": "^0.9.16",
+    "snyk": "^1.64.0"
+  },
+  "snyk": true
 }
