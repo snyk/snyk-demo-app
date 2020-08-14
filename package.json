@@ -14,7 +14,9 @@
     }
   ],
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "falcor-hapi": "netflix/falcor-hapi",
@@ -23,6 +25,8 @@
     "inert": "^3.2.0",
     "bassmaster": "1.5.1",
     "snyk-demo-child": "0.0.1",
-    "azure-mgmt-storage": "^0.9.16"
-  }
+    "azure-mgmt-storage": "^0.9.16",
+    "snyk": "^1.374.0"
+  },
+  "snyk": true
 }
