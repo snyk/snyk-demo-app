@@ -17,6 +17,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "handlebars": "^3.0.0"
+    "handlebars": "^4.7.7"
   }
 }
